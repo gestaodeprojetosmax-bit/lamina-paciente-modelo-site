@@ -34,7 +34,7 @@ footer{text-align:center;font-size:12px;opacity:.6;padding:40px 0}
 </header>
 <div class="ba"><img alt="Antes e depois de uma paciente modelo" decoding="async" loading="eager" src="/paciente-modelo.jpg"/></div>
 <p class="cap">Resultado real, realizado durante o curso.</p>
-<a class="btn" href="https://wa.me/5511936206406?text=Oi%2C%20quero%20saber%20mais%20sobre%20ser%20paciente%20modelo%20no%20dia%2008">QUERO SABER MAIS NO WHATSAPP</a>
+<a class="btn" href="https://wa.me/5511936206406?text=Oi%2C%20quero%20saber%20mais%20sobre%20ser%20paciente%20modelo%20no%20dia%2008" data-wa="1">QUERO SABER MAIS NO WHATSAPP</a>
 <h2>Como funciona</h2>
 <div class="steps">
 <div class="step"><div class="n">1</div><div><b>Chame no WhatsApp</b>Toque no botão e fale com a nossa assistente virtual.</div></div>
@@ -42,6 +42,21 @@ footer{text-align:center;font-size:12px;opacity:.6;padding:40px 0}
 <div class="step"><div class="n">3</div><div><b>Garanta a sua participação</b>Confirmando os detalhes, você reserva o seu lugar no dia 08.</div></div>
 </div>
 <div class="box"><p>Oportunidade, preço de custo</p><small>Os valores são informados individualmente pelo WhatsApp.</small></div>
-<div style="margin:36px 0 0"><a class="btn" href="https://wa.me/5511936206406?text=Oi%2C%20quero%20saber%20mais%20sobre%20ser%20paciente%20modelo%20no%20dia%2008">FALAR COM A ASSISTENTE AGORA</a></div>
+<div style="margin:36px 0 0"><a class="btn" href="https://wa.me/5511936206406?text=Oi%2C%20quero%20saber%20mais%20sobre%20ser%20paciente%20modelo%20no%20dia%2008" data-wa="1">FALAR COM A ASSISTENTE AGORA</a></div>
 <footer>Dr. Ritchie · Paciente Modelo · Dia 08</footer>
-</div></body></html>
+</div><script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','28204701035866392');fbq('track','PageView');
+(function(){
+var K=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'],T={};
+try{var q=new URLSearchParams(location.search),saved={};try{saved=JSON.parse(sessionStorage.getItem('pm_utm')||'{}')}catch(e){}
+K.forEach(function(k){var v=q.get(k)||saved[k];if(v)T[k]=v});sessionStorage.setItem('pm_utm',JSON.stringify(T))}catch(e){}
+var anuncio=T.utm_content||T.utm_campaign||'';
+var msg='Oi, '+(anuncio?'vim pelo anúncio '+anuncio+' e ':'')+'quero saber mais sobre ser paciente modelo no dia 08';
+var NUM='5511936206406';
+document.querySelectorAll('a[data-wa]').forEach(function(a){
+a.href='https://wa.me/'+NUM+'?text='+encodeURIComponent(msg);
+a.addEventListener('click',function(){try{fbq('track','Contact',{content_name:'Paciente Modelo dia 08'});fbq('trackCustom','LeadWhatsApp',{content_name:'Paciente Modelo dia 08',utm_content:T.utm_content||'',utm_campaign:T.utm_campaign||''})}catch(e){}})});
+})();
+</script>
+</body></html>
