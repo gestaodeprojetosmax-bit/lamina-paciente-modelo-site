@@ -25,6 +25,7 @@ h2{font-family:'Playfair Display',serif;font-size:30px;text-align:center;margin:
 .box p{font-family:'Playfair Display',serif;font-size:24px}
 .box small{display:block;margin-top:8px;opacity:.75;font-size:13px}
 footer{text-align:center;font-size:12px;opacity:.6;padding:40px 0}
+.car{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:0;scrollbar-width:none}.car::-webkit-scrollbar{display:none}.car img{flex:0 0 100%;width:100%;scroll-snap-align:center;object-fit:contain;background:#000}.dots{display:flex;justify-content:center;gap:8px;margin:12px 0 0}.dots i{width:8px;height:8px;border-radius:50%;background:#b08a4e;opacity:.3;transition:.2s}.dots i.on{opacity:1}
 </style><meta content="Paciente Modelo com o Dr. Ritchie: oportunidade de realizar seu procedimento a preço de custo no dia 08." name="description"/><meta content="noindex" name="robots"/></head><body><div class="wrap">
 <header>
 <div class="eyebrow">Dr. Ritchie</div>
@@ -32,7 +33,9 @@ footer{text-align:center;font-size:12px;opacity:.6;padding:40px 0}
 <div class="pill">Dia 08</div>
 <p class="lead">Uma oportunidade de realizar o seu procedimento a preço de custo, com resultado real, feito durante o curso.</p>
 </header>
-<div class="ba"><img alt="Antes e depois de uma paciente modelo" decoding="async" loading="eager" src="/paciente-modelo.jpg"/></div>
+<div class="ba"><div class="car" id="car"><img alt="Antes e depois de uma paciente modelo" decoding="async" loading="eager" src="/paciente-modelo.jpg"/><img alt="Antes e depois, paciente modelo 2" loading="lazy" src="/caso-2.jpg"/><img alt="Antes e depois, paciente modelo 3" loading="lazy" src="/caso-3.jpg"/><img alt="Antes e depois, paciente modelo 4" loading="lazy" src="/caso-4.jpg"/><img alt="Antes e depois, paciente modelo 4, outro ângulo" loading="lazy" src="/caso-5.jpg"/></div></div>
+<div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+<script>(function(){var c=document.getElementById("car"),d=document.querySelectorAll("#dots i");c.addEventListener("scroll",function(){var i=Math.round(c.scrollLeft/c.clientWidth);d.forEach(function(x,k){x.className=k==i?"on":""})},{passive:true})})();</script>
 <p class="cap">Resultado real, realizado durante o curso.</p>
 <a class="btn" href="https://wa.me/553196926557?text=Oi%2C%20quero%20saber%20mais%20sobre%20ser%20paciente%20modelo%20no%20dia%2008" data-wa="1">QUERO SABER MAIS NO WHATSAPP</a>
 <h2>Como funciona</h2>
